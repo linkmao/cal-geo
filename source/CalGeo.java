@@ -1,24 +1,47 @@
 //package mundo;
 
 public class CalGeo{
-		
-
-public static void main (String args[]){
-	Cuadrado cuadrado = new Cuadrado(4);
-	Rectangulo rectangulo = new Rectangulo(5,7);
-	Triangulo triangulo = new Triangulo(2, 4, 5);
-	Circulo circulo = new Circulo (5);
-	Esfera esfera = new Esfera (5);
-	System.out.println(cuadrado);
-	System.out.println(rectangulo);
-	System.out.println(triangulo);
-	System.out.println(triangulo.area());
-	System.out.println(triangulo.perimetro());
-	System.out.println(circulo);
-	System.out.println(circulo.circunferencia());
-	System.out.println(circulo.area());
-	System.out.println(esfera);
-	System.out.println(esfera.superfice());
-	System.out.println(esfera.volumen());
+	Cuadrado cuadrado;
+	Rectangulo rectangulo;
+	Triangulo triangulo;
+	Circulo circulo;
+	Esfera esfera;
+	
+	// Metodo constructor vacio
+	public CalGeo() {
 	}
+	
+	
+	public Cuadrado calcularCuadrado(double pLado) {
+		cuadrado = new Cuadrado (pLado);
+		return cuadrado;
+		
+	} 
+	
+	
+	public Rectangulo calcularRectangulo(double pBase, double pAltura) {
+		rectangulo = new Rectangulo (pBase,pAltura);
+		return rectangulo;
+		
+	} 
+	
+
+	public Triangulo calcularTriangulo(double pLado1, double pLado2, double pLado3) {
+		triangulo = new Triangulo (pLado1,pLado2,pLado3);
+		return triangulo;
+		
+	} 
+	
+	public Circulo calcularCirculo(double pRadio) {
+		circulo = new Circulo (pRadio);
+		return circulo;
+		
+	} 
+	
+	public Esfera calcularEsfera(double pRadio) {
+		esfera = new Esfera (pRadio);
+		return esfera;
+		
+	} 
+
 }
